@@ -12,8 +12,7 @@
   <!-- header -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        
+      <div class="container-fluid"> 
        <a href="#"><img src="./img/duck.png"  alt="duck" style="width:4rem;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,14 +45,16 @@
 
   <!-- main -->
 <main>
-    <div class="container mt-3 d-flex justify-content-between py-4 px-4 fs-4">
-       <div class="title fs-2">Catalogo Libri</div>
-      <button class="btn-blue rounded-2 py-1 px-2 bg-primary text-white border border-none">Aggiungi Libro</button>
-    </div>
 
     <!-- table -->
   <div class="container">
-    <div class="table-responsive">
+    <div class="row">
+      <div class="col-12 col-lg-8 ">
+        <div class="container mt-3 d-flex justify-content-between py-4 px-4 fs-4">
+       <div class="title fs-2">Catalogo Libri</div>
+      <a href="http://127.0.0.1:3000/html-css-bootstrap-dashboard.html?serverWindowId=52bbc93c-905c-4063-b06c-fbc8187bb99d"><button class="btn btn-blue rounded-2 py-1 px-2 bg-primary text-white border border-none">Aggiungi Libro</button></a>
+    </div>
+        <div class="table-responsive">
       <table class="table">
          <thead>
            <tr>
@@ -174,48 +175,53 @@
                 </tr>
               </tbody>
         </table>
-     </div>
-
-             <!-- checklist -->
-              <div class="card">
-                <div class="card-body  py-1 px-3 fs-1 bg-secondary bg-opacity-10">Todo</div>
-                  <ul class="list-group p-3">
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                      <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare segreteria</label>
-                    </li>
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                      <label class="form-check-label stretched-link" for="secondCheckboxStretched">Mandare avvisi prestiti scaduti</label>
-                    </li>
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                      <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Ordinare nuovi libri</label>
-                    </li>
-                  </ul>
-              </div>
-
-            <div class="card mt-4 mb-4">
-                <div class="card-body fs-1 bg-secondary bg-opacity-10"> F.A.Q</div>
-                    <select class="form-select form-select-sm" aria-label="Small select example">
-                    <option  selected>Come aggiungere un nuovo libro?</option>
-                    <option value="1">1 step</option>
-                    <option value="2">2 step</option>
-                    <option value="3">3 step</option>
-                  </select>
-
-                  <select class="form-select form-select-sm" aria-label="Small select example">
-                     <option selected>Come posso accedere all'anagrafica utenti?</option>
-                      <option value="1"> Versione mobile </option>
-                      <option value="2">tVersione ablet</option>
-                      <option value="3">Versione dekstop</option>
-                  </select>
-                  <select class="form-select form-select-sm" aria-label="Small select example">
-                     <option selected>Open this select menu</option>
-                     <option value="1">si, valido da Android e Ios</option>
-                  </select>
-            </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mt-4">
+        <!-- checklist -->
+      <div class="card">
+        <div class="card-body  py-1 px-3 fs-1 bg-secondary bg-opacity-10">Todo</div>
+          <ul class="list-group p-3">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+              <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare segreteria</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+              <label class="form-check-label stretched-link" for="secondCheckboxStretched">Mandare avvisi prestiti scaduti</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+              <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Ordinare nuovi libri</label>
+            </li>
+          </ul>
+      </div>
+    
+      <div class="card mt-4 mb-4">
+          <div class="card-body fs-1 bg-secondary bg-opacity-10"> F.A.Q</div>
+              <select class="form-select form-select-sm" aria-label="Small select example">
+              <option  selected>Come aggiungere un nuovo libro?</option>
+              <option value="1">1 step</option>
+              <option value="2">2 step</option>
+              <option value="3">3 step</option>
+            </select>
+    
+            <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Come posso accedere all'anagrafica utenti?</option>
+                <option value="1"> Versione mobile </option>
+                <option value="2">tVersione ablet</option>
+                <option value="3">Versione dekstop</option>
+            </select>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Open this select menu</option>
+                <option value="1">si, valido da Android e Ios</option>
+            </select>
+      </div>
+        
+      </div>
     </div>
+    
+  </div>
 </main>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
